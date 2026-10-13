@@ -1,0 +1,305 @@
+[
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K1 share maturing <1y",
+    "reported_scalars": 1,
+    "additional_linear_rank": 1,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "all[0,1)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K9 mean maturity of the <1y bucket (+ APF part)",
+    "reported_scalars": 4,
+    "additional_linear_rank": 4,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "all[0,1)",
+      "t*all[0,1)",
+      "APF face[0,1)",
+      "t*APF face[0,1)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K2 annual maturity amounts y1-5",
+    "reported_scalars": 5,
+    "additional_linear_rank": 4,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "all[0,1)",
+      "all[1,2)",
+      "all[2,3)",
+      "all[3,4)",
+      "all[4,5)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K3 mean maturity within DMO brackets",
+    "reported_scalars": 16,
+    "additional_linear_rank": 7,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "conv[0,3)",
+      "t*conv[0,3)",
+      "conv[3,7)",
+      "t*conv[3,7)",
+      "conv[7,15)",
+      "t*conv[7,15)",
+      "conv[15,None)",
+      "t*conv[15,None)",
+      "IL[0,3)",
+      "t*IL[0,3)",
+      "IL[3,7)",
+      "t*IL[3,7)",
+      "IL[7,15)",
+      "t*IL[7,15)",
+      "IL[15,None)",
+      "t*IL[15,None)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K4 annual amounts + mean dates y1-5",
+    "reported_scalars": 10,
+    "additional_linear_rank": 9,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "all[0,1)",
+      "t*all[0,1)",
+      "all[1,2)",
+      "t*all[1,2)",
+      "all[2,3)",
+      "t*all[2,3)",
+      "all[3,4)",
+      "t*all[3,4)",
+      "all[4,5)",
+      "t*all[4,5)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K5 APF holdings by DMO bracket",
+    "reported_scalars": 8,
+    "additional_linear_rank": 6,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "APF IPP[0,3)",
+      "APF IPP[3,7)",
+      "APF IPP[7,15)",
+      "APF IPP[15,None)",
+      "APF face[0,3)",
+      "APF face[3,7)",
+      "APF face[7,15)",
+      "APF face[15,None)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K6 APF annual amounts + mean dates y1-5",
+    "reported_scalars": 20,
+    "additional_linear_rank": 20,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "APF IPP[0,1)",
+      "t*APF IPP[0,1)",
+      "APF IPP[1,2)",
+      "t*APF IPP[1,2)",
+      "APF IPP[2,3)",
+      "t*APF IPP[2,3)",
+      "APF IPP[3,4)",
+      "t*APF IPP[3,4)",
+      "APF IPP[4,5)",
+      "t*APF IPP[4,5)",
+      "APF face[0,1)",
+      "t*APF face[0,1)",
+      "APF face[1,2)",
+      "t*APF face[1,2)",
+      "APF face[2,3)",
+      "t*APF face[2,3)",
+      "APF face[3,4)",
+      "t*APF face[3,4)",
+      "APF face[4,5)",
+      "t*APF face[4,5)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "consolidated",
+    "baseline": "D1 DMO brackets",
+    "candidate": "K7 share refixing <1y (consolidated)",
+    "reported_scalars": 1,
+    "additional_linear_rank": 1,
+    "baseline_rank": 12,
+    "quantity_names": [
+      "refix[0,1)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "gross",
+    "baseline": "D2 GFS residual maturity",
+    "candidate": "K1 share maturing <1y",
+    "reported_scalars": 1,
+    "additional_linear_rank": 0,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "gross",
+    "baseline": "D2 GFS residual maturity",
+    "candidate": "K9 mean maturity of the <1y bucket",
+    "reported_scalars": 2,
+    "additional_linear_rank": 1,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)",
+      "t*all[0,1)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "gross",
+    "baseline": "D2 GFS residual maturity",
+    "candidate": "K2 annual maturity amounts y1-5",
+    "reported_scalars": 5,
+    "additional_linear_rank": 3,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)",
+      "all[1,2)",
+      "all[2,3)",
+      "all[3,4)",
+      "all[4,5)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "gross",
+    "baseline": "D2 GFS residual maturity",
+    "candidate": "K3 mean maturity within DMO brackets",
+    "reported_scalars": 16,
+    "additional_linear_rank": 15,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "conv[0,3)",
+      "t*conv[0,3)",
+      "conv[3,7)",
+      "t*conv[3,7)",
+      "conv[7,15)",
+      "t*conv[7,15)",
+      "conv[15,None)",
+      "t*conv[15,None)",
+      "IL[0,3)",
+      "t*IL[0,3)",
+      "IL[3,7)",
+      "t*IL[3,7)",
+      "IL[7,15)",
+      "t*IL[7,15)",
+      "IL[15,None)",
+      "t*IL[15,None)"
+    ]
+  },
+  {
+    "country": "uk",
+    "perimeter": "gross",
+    "baseline": "D2 GFS residual maturity",
+    "candidate": "K4 annual amounts + mean dates y1-5",
+    "reported_scalars": 10,
+    "additional_linear_rank": 8,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)",
+      "t*all[0,1)",
+      "all[1,2)",
+      "t*all[1,2)",
+      "all[2,3)",
+      "t*all[2,3)",
+      "all[3,4)",
+      "t*all[3,4)",
+      "all[4,5)",
+      "t*all[4,5)"
+    ]
+  },
+  {
+    "country": "us",
+    "perimeter": "gross",
+    "baseline": "U2 GFS residual maturity",
+    "candidate": "K1 share maturing <1y",
+    "reported_scalars": 1,
+    "additional_linear_rank": 0,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)"
+    ]
+  },
+  {
+    "country": "us",
+    "perimeter": "gross",
+    "baseline": "U2 GFS residual maturity",
+    "candidate": "K2 annual maturity amounts y1-5",
+    "reported_scalars": 5,
+    "additional_linear_rank": 3,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)",
+      "all[1,2)",
+      "all[2,3)",
+      "all[3,4)",
+      "all[4,5)"
+    ]
+  },
+  {
+    "country": "us",
+    "perimeter": "gross",
+    "baseline": "U2 GFS residual maturity",
+    "candidate": "K4 annual amounts + mean dates y1-5",
+    "reported_scalars": 10,
+    "additional_linear_rank": 8,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "all[0,1)",
+      "t*all[0,1)",
+      "all[1,2)",
+      "t*all[1,2)",
+      "all[2,3)",
+      "t*all[2,3)",
+      "all[3,4)",
+      "t*all[3,4)",
+      "all[4,5)",
+      "t*all[4,5)"
+    ]
+  },
+  {
+    "country": "us",
+    "perimeter": "gross",
+    "baseline": "U2 GFS residual maturity",
+    "candidate": "K8 FRN total",
+    "reported_scalars": 1,
+    "additional_linear_rank": 1,
+    "baseline_rank": 5,
+    "quantity_names": [
+      "frn total"
+    ]
+  }
+]

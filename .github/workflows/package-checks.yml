@@ -1,0 +1,28 @@
+name: Exact frozen-model certificate and accounting replay
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  accounting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Parse claim metadata
+        run: python -m json.tool CLAIMS.json > /dev/null
+      - name: Verify exact model certificates and result linkage
+        run: python scripts/verify_certificates.py --frozen
+      - name: Repeat certificate verification with assertions disabled
+        run: python -O scripts/verify_certificates.py --frozen
+      - name: Check historical accounting arithmetic
+        run: python scripts/verify_accounting.py
+      - name: Semantic negative controls
+        run: |
+          python scripts/negative_controls.py
+          python -O scripts/negative_controls.py
+      - name: Check accounting with assertions disabled
+        run: python -O scripts/verify_accounting.py
+      - name: State CI scope
+        run: echo 'CI checks all 4576 endpoints against shipped exact model snapshots and result values, plus accounting arithmetic. It does not retrieve source data, validate fiscal assumptions or establish independent reproduction.'

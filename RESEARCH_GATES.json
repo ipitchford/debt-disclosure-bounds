@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0",
+  "recordBasis": "Retrospective publication intake plus explicitly requested revision and extension work, 13 October 2026. Original search timestamps are not reconstructed.",
+  "contributionMap": [
+    {
+      "claim": "Certified model-conditional bounds and comparisons of debt-disclosure vectors",
+      "unit": "statement",
+      "paperLocation": "Sections 2-9",
+      "searches": [
+        {
+          "date": "2026-10-13",
+          "query": "partial identification bounds government debt maturity distribution average maturity refinancing share",
+          "corpus": "Inherited dated search log: web, OpenAlex and Consensus; Semantic Scholar search failed"
+        }
+      ],
+      "closestPriorWork": "Barrett and Johns 2024; IMF WP2021/101 section4.1 and AppendixB: parametric maturity fitting. Moment bounds and LP machinery are classical.",
+      "verdict": "partially-known-cited",
+      "qualification": "Specialized application with bounded search only; no universal novelty claim."
+    },
+    {
+      "claim": "Finite breakpoint reduction and exact primal-dual certificates",
+      "unit": "method",
+      "paperLocation": "Sections 2-3",
+      "searches": [
+        {
+          "date": "2026-10-13",
+          "query": "stop-loss transform bounds known mean and range; moment constraints linear programming",
+          "corpus": "Inherited dated prior-art search; publication-intake comparison"
+        }
+      ],
+      "closestPriorWork": "Classical moment bounds, convex chord/Jensen bounds and exact LP verification; cited in manuscript",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Barrett and Johns, accessible IMF WP2021/101",
+      "usedFor": "Closest maturity-fitting comparison",
+      "readWhat": "Full relevant argument in section4.1 and AppendixB",
+      "date": "2026-10-13",
+      "evidenceLocator": "https://www.imf.org/-/media/files/publications/wp/2021/english/wpiea2021101-print-pdf.pdf"
+    },
+    {
+      "citation": "BoE APF annual accounts2025/26",
+      "usedFor": "Historical cash, loan, valuation and indemnity reconciliation",
+      "readWhat": "Financial statements and notes6-10, including cash remuneration and loan principal versus accrued interest",
+      "date": "2026-10-13",
+      "evidenceLocator": "https://www.bankofengland.co.uk/-/media/boe/files/asset-purchase-facility/2026/apf-annual-report-2025-26.pdf"
+    },
+    {
+      "citation": "BoE weekly7October2026 and operational usage table",
+      "usedFor": "Different meanings of loan balance and retained initial purchase proceeds",
+      "readWhat": "Dated loan entry, operational holdings entries and definitions",
+      "date": "2026-10-13",
+      "evidenceLocator": "SOURCES.md; paper/accounting_revision.tex"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "Actual-support identification criterion was too weak",
+      "closingQuestion": "Can the global feasible-set condition be stated exactly?",
+      "triedOrSearched": "Orthogonality to span(P-P), with explicit same-moment counterexample",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": "",
+      "estimatedCost": "Less than2hours, no paid compute; completed."
+    },
+    {
+      "limitation": "First-pass financing mislabeled as exact recursive financing",
+      "closingQuestion": "Can a declared annual convention remain piecewise affine?",
+      "triedOrSearched": "Derived exact discrete recurrence and added36 certified endpoints",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": "",
+      "estimatedCost": "Less than2hours plus local replay; completed."
+    },
+    {
+      "limitation": "DMO gilt-row source authentication",
+      "closingQuestion": "Can the official export be retrieved and compared?",
+      "triedOrSearched": "Browser download of official D1A XLS; all105 rows checked",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": "",
+      "estimatedCost": "Less than2hours with ordinary official browser access; completed."
+    },
+    {
+      "limitation": "Actual October and multiyear consolidated APF exposure",
+      "closingQuestion": "Do public sources identify matched principal, cash and future funding paths?",
+      "triedOrSearched": "Checked weekly and operational sources and annual accounts; derived historical net repricing precision bounds and conditional path envelope",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Matched October balances and future paths are not established by these sources",
+      "whyNotClosedNow": "Unsupported point forecasts would require new evidence or explicit additional assumptions",
+      "estimatedCost": "Not costable without matched data and a justified path model."
+    },
+    {
+      "limitation": "Reconstructed UK bill timing",
+      "closingQuestion": "Can available evidence or a cheap check remove this limitation?",
+      "triedOrSearched": "Reviewed model assumptions, source availability and the supplied review; see REVIEW_RESPONSE.md and CITATION_AUDIT.md.",
+      "estimatedCost": "New data, validation or external work required; no reliable short completion estimate.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Aggregate issuance and stock do not identify the valuation-date bill ledger; retain conditional bounds and reconstructed point values separately.",
+      "whyNotClosedNow": "Keep the bounded claim explicit rather than invent evidence."
+    },
+    {
+      "limitation": "Equal collection cost for disclosure vectors",
+      "closingQuestion": "Can available evidence or a cheap check remove this limitation?",
+      "triedOrSearched": "Reviewed model assumptions, source availability and the supplied review; see REVIEW_RESPONSE.md and CITATION_AUDIT.md.",
+      "estimatedCost": "New data, validation or external work required; no reliable short completion estimate.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Scalar counts and linear ranks were added, but actual reporting burden needs new operational evidence.",
+      "whyNotClosedNow": "Keep the bounded claim explicit rather than invent evidence."
+    },
+    {
+      "limitation": "Continuous-time recursive financing",
+      "closingQuestion": "Can available evidence or a cheap check remove this limitation?",
+      "triedOrSearched": "Reviewed model assumptions, source availability and the supplied review; see REVIEW_RESPONSE.md and CITATION_AUDIT.md.",
+      "estimatedCost": "New data, validation or external work required; no reliable short completion estimate.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The certified extension is exact discrete annual financing; exponential maturity kernels need a different verified reduction or approximation.",
+      "whyNotClosedNow": "Keep the bounded claim explicit rather than invent evidence."
+    },
+    {
+      "limitation": "Forecast, behavioural and future-deficit validity",
+      "closingQuestion": "Can available evidence or a cheap check remove this limitation?",
+      "triedOrSearched": "Reviewed model assumptions, source availability and the supplied review; see REVIEW_RESPONSE.md and CITATION_AUDIT.md.",
+      "estimatedCost": "New data, validation or external work required; no reliable short completion estimate.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The declared fixed-stock model excludes these effects; they are not implied by a certificate.",
+      "whyNotClosedNow": "Keep the bounded claim explicit rather than invent evidence."
+    },
+    {
+      "limitation": "OBR ready-reckoner reconciliation",
+      "closingQuestion": "Can available evidence or a cheap check remove this limitation?",
+      "triedOrSearched": "Reviewed model assumptions, source availability and the supplied review; see REVIEW_RESPONSE.md and CITATION_AUDIT.md.",
+      "estimatedCost": "New data, validation or external work required; no reliable short completion estimate.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Different windows, liabilities, funding conventions and forecast flows remain unbridged.",
+      "whyNotClosedNow": "Keep the bounded claim explicit rather than invent evidence."
+    },
+    {
+      "limitation": "Exhaustive novelty, independent reproduction and external review",
+      "closingQuestion": "Can available evidence or a cheap check remove this limitation?",
+      "triedOrSearched": "Reviewed model assumptions, source availability and the supplied review; see REVIEW_RESPONSE.md and CITATION_AUDIT.md.",
+      "estimatedCost": "New data, validation or external work required; no reliable short completion estimate.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The retained evidence is bounded, producer-coordinated and AI-assisted; no external assurance can be inferred.",
+      "whyNotClosedNow": "Keep the bounded claim explicit rather than invent evidence."
+    }
+  ],
+  "extensionScout": {
+    "by": "Codex internal revision and targeted accounting check",
+    "date": "2026-10-13",
+    "proposals": [
+      "Exact annual recursion",
+      "Historical source-backed accounting check",
+      "Conditional accounting-error envelope",
+      "Disclosure-vector scalar counts and ranks"
+    ],
+    "actions": [
+      "Implemented and tested all four; preserve distinct evidence scopes and do not assert a REF four-star outcome"
+    ]
+  }
+}

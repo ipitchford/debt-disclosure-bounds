@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the candidate manuscript and version used."
+title: "What Public Debt Statistics Establish About Interest-Rate Exposure"
+authors:
+  - name: Anonymous
+version: 1.1.0-candidate
+date-released: 2026-10-13
+doi: 10.5281/zenodo.23337976
+url: https://github.com/ipitchford/debt-disclosure-bounds
+license: CC0-1.0
+type: article

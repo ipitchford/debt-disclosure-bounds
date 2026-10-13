@@ -1,0 +1,29 @@
+{
+  "title": "What Public Debt Statistics Establish About Interest-Rate Exposure",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "description": "Unrefereed candidate: sharp model-conditional debt-interest bounds, exact rational certificates, disclosure-vector comparisons, qualified APF accounting and an exact discrete annual-financing extension. Not a forecast or validated complete public-sector exposure.",
+  "version": "1.1.0-candidate",
+  "publication_date": "2026-10-13",
+  "license": "cc-zero",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/debt-disclosure-bounds",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "keywords": [
+    "debt disclosure",
+    "partial identification",
+    "linear programming",
+    "interest-rate exposure",
+    "candidate"
+  ]
+}

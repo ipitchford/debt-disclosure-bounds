@@ -1,0 +1,9 @@
+# Response to the 13 October major-revision review
+1. **APF funding stock:** withdraw loan=IPP and whole-Bank interpretations. Preserve IPP runoff calculations as synthetic experiments; give dated stock/flow identities, a source-backed frozen-February derivative, and explicitly conditional residual-accounting envelope. The usable7 October observations do not identify cash/loan paths. No invented33.670bn correction.
+2. **Identification:** replace the single-support explanation with the full feasible-set criterion. Restrict annual-profile sufficiency to specified windows and distinguish sufficient from necessary disclosure.
+3. **Interest on interest:** identify legacy first-pass approximation. Add a specified exact annual recursive convention, separate from continuous financing;36 new endpoint certificates.
+4. **Disclosure burden:** inventory actual scalar vectors and incremental rank. Compare reporting packages without asserting equal collection cost; require linear coupling.
+5. **External validity / provenance:** official dated DMO export checked against105 records; reconstructed bill dates remain explicit. Implementation/source verification is not complete institutional validation.
+6. **Endpoint and scenario precision:** distinguish attained left endpoints from approached excluded right endpoints, model years of365.25 days, rate scenario from perimeter, and exact encoded rationals from source precision.
+7. **Certificate linkage / negative controls:** supplied checker links exact values to result identities; semantic negative controls and tests are available. Execution outcomes must be read from retained gate evidence, not this response.
+The revisions strengthen a conditional methods contribution. They do not warrant an asserted four-star rating, external peer-review status, or complete fiscal forecast.

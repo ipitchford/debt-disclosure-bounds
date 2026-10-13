@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0-candidate",
+  "doi": "10.5281/zenodo.23337976",
+  "status": "unrefereed-candidate",
+  "claims": [
+    {
+      "id": "DDB-C1",
+      "claim": "Sharp finite reduction under declared piecewise-affine moment, kernel, support and endpoint assumptions",
+      "evidence": [
+        "paper/main.tex",
+        "src/ddb/pa.py",
+        "src/ddb/model.py",
+        "src/ddb/lp.py"
+      ],
+      "boundary": "Not arbitrary nonlinear kernels or institutional validation"
+    },
+    {
+      "id": "DDB-C2",
+      "claim": "Global identification iff objective annihilates span(P-P) for the entire feasible set",
+      "evidence": [
+        "paper/main.tex"
+      ],
+      "boundary": "Actual support alone does not constrain all compatible portfolios"
+    },
+    {
+      "id": "DDB-C3",
+      "claim": "Exact encoded endpoints and disclosure-vector comparisons",
+      "evidence": [
+        "results/certificates",
+        "scripts/verify_certificates.py",
+        "results/disclosure_vectors.json"
+      ],
+      "boundary": "Encoded rational optimality; not equal reporting cost or recovered source precision"
+    },
+    {
+      "id": "DDB-C4",
+      "claim": "Exact annual midpoint/simple-interest recursive financing convention",
+      "evidence": [
+        "paper/accounting_revision.tex",
+        "scripts/run_revision_extensions.py",
+        "results/recursive_annual.json"
+      ],
+      "boundary": "Not continuous-time financing"
+    },
+    {
+      "id": "DDB-C5",
+      "claim": "Conditional frozen-February net financing derivative and residual envelope",
+      "evidence": [
+        "paper/accounting_revision.tex",
+        "paper/empirical_revision.tex",
+        "scripts/verify_accounting.py"
+      ],
+      "boundary": "No matched October cash/loan paths or unconditional five-year funding correction"
+    },
+    {
+      "id": "DDB-C6",
+      "claim": "105 gilt records match separately retrieved official dated DMO export in specified fields",
+      "evidence": [
+        "scripts/verify_official_gilts.py",
+        "data/PROVENANCE.md"
+      ],
+      "boundary": "Producer-coordinated source verification; bill timing remains reconstructed"
+    }
+  ]
+}

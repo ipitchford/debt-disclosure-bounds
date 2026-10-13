@@ -1,0 +1,20 @@
+[project]
+name = "ddb"
+version = "1.1.0rc1"
+description = "Sharp bounds on debt-interest exposure implied by public debt disclosures"
+requires-python = ">=3.12"
+dependencies = [
+    "highspy>=1.15.1",
+    "hypothesis>=6.169.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.6",
+    "pytest>=9.1.1",
+    "python-flint>=0.9.0",
+    "scipy>=1.18.1",
+    "xlrd>=2.0.2",
+]
+
+[tool.uv]
+package = false

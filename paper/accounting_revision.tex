@@ -1,0 +1,50 @@
+\section{Accounting reconciliation and its information boundary}\label{sec:accounting}
+
+The Bank's weekly report and operational stock page both refer to 7 October 2026 \citep{BoEweekly,BoEusage}. They report an APF loan of \pounds521,819 million and gilt holdings of \pounds488,149 million at initial purchase proceeds, respectively. The latter is a historical purchase-cost measure after removing the IPP of sold or redeemed holdings, not their sale proceeds or the current loan. The manuscript's more precise workbook sum is \pounds488,149.275 million. Subtracting it from the rounded loan gives \pounds33,669.725 million, but this is neither measured net funding nor an established correction to the results.
+
+A dated observation from 7 October is usable on 13 October. The limitation is not that October is unfinished: it is the absence of matched cash/principal information and future cash-flow paths. The annual accounts at 28 February 2026 \citep{BoEaccounts} provide a different-date check, in \pounds million:
+\[
+21{,}714+382{,}080+150{,}677+51=554{,}522.
+\]
+The terms are cash, securities at fair value, indemnity asset and other assets; the right side is the loan liability. Notes 6--7 state that cash earns Bank Rate and that the loan includes principal and accrued interest. February balances cannot be inserted into October calculations. These observations follow the Bank's accounts and weekly/operational records, not a new accounting theory.
+
+More generally let $V,C,I,A,L,O,E$ denote securities carrying value, cash, indemnity receivable, other assets, loan liability, other liabilities and equity. Then
+\[
+L-P=(V-P)+C+I+A-O-E,
+\]
+where $P$ is remaining IPP. For loan principal $L_p$, purchases $X$, cash proceeds $R$, coupons $K$, cash-deposit interest $I_C$, loan interest $I_L$, costs $F$ and indemnity cash receipts $T$ from the Treasury, cash conservation gives
+\begin{align*}
+\Delta C&=\Delta L_p-X+R+K+I_C-I_L-F+T,\\
+\Delta(L_p-P)&=\Delta C+(D-R)-K-I_C+I_L+F-T,
+\end{align*}
+where $D$ is the IPP removed and $\Delta P=X-D$. Loan carrying values additionally require accrued-interest changes. The available October sources do not identify all these terms or their future paths. Under fixed balances and equal repricing, direct net financing sensitivity involves $L_p-C$, not $L$ or $P$. Whole-Bank consolidation instead cancels internal loans and deposits and requires external reserves and offsetting assets. A fixed banknote subtraction cannot establish that perimeter.
+
+Accordingly all legacy \texttt{consolidated} and \texttt{consolidated\_bank} results are retained as explicitly synthetic allocation/runoff scenarios. Their certificates establish model optima, not observed consolidated fiscal exposure. The unsupported institutional equivalence is withdrawn. No numerical residual accounting bound is claimed from these sources.
+
+\begin{proposition}[Conditional accounting-error envelope]\label{prop:accounting}
+Suppose a declared experiment has $J_{\rm target}=J_{\rm proxy}+\int_a^b s(t)q(t)\,dt$, with known shock $s$ and externally justified pointwise bounds $q_-\le q\le q_+$. Assume these functions are measurable and the products $sq,sq_-,sq_+$ are integrable. If $L\le J_{\rm proxy}\le U$, then the target lies between
+\[
+L+\int_a^b\min\{sq_-,sq_+\}\,dt
+\quad\hbox{and}\quad
+U+\int_a^b\max\{sq_-,sq_+\}\,dt.
+\]
+These bounds are sharp if $L,U$ are attained sharp proxy endpoints, the portfolio and residual feasible sets form a Cartesian product, and the sign-selected paths attaining the displayed residual extrema are feasible. Otherwise they are only enclosing bounds.
+\end{proposition}
+\begin{proof}
+Multiply the pointwise bounds by the signed shock, take the smaller and larger products and integrate. Add the proxy bounds. Under the product assumption each proxy extremum can be combined with the corresponding extremal residual path; without it this combination need not be feasible.
+\end{proof}
+Here $q$ is net repricing principal omitted by the proxy; other accounting differences must either be fixed or included explicitly in the error model. Even knowing $q(0)$ does not control its multi-year integral. A hypothetically constant extra \pounds33.669725 billion would contribute \pounds0.33669725 billion per one-percentage-point year, but neither constancy nor that net amount is established. This example is a sensitivity calculation, not a corrected estimate or confidence interval.
+
+\input{empirical_revision}
+
+\section{Exactly recursive annual financing}\label{sec:recursive}
+The original \texttt{iai} kernel is an annual-midpoint \emph{first-pass approximation}: it pays interest on previous first-round costs, not on accumulated financing interest. Exact optimisation of that kernel does not make it exact continuous-time financing.
+
+An alternative declared discrete convention books each year's first-round cost $C_k$ at the midpoint, charges it half-year simple interest at rational rate $y\ge0$, and charges the prior accumulated extra debt a full year of simple interest. With $B_0=0$,
+\[
+B_k=(1+y)B_{k-1}+(1+y/2)C_k,\qquad
+B_H=(1+y/2)\sum_{j=1}^H(1+y)^{H-j}C_j.
+\]
+This is exact for that convention by induction. Year-$k$ cost is $B_k-B_{k-1}$. Each $C_j$ is a piecewise-affine linear functional of the ledger, so the same is true of these rational weighted sums and the existing reduction and certificates apply. At $y=0.045$, the synthetic IPP-funded five-year value is \pounds52.678453 billion, versus \pounds52.443165 billion for first-pass financing and \pounds47.735924 billion without it. We supply 36 additional exact endpoint certificates for this convention. None validates the APF accounting.
+
+Continuous recursive financing instead weights a constant flow beginning at $\tau$ by $(e^{y(H-\tau)^+}-1)/y$. It remains linear in amounts but not piecewise affine in maturity. We do not apply the breakpoint lemma to it or claim the annual convention equals it. The review's approximately \pounds52.753124 billion continuous calculation is a useful convention comparison, not a separately certified result of this release.

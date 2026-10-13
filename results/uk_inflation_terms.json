@@ -1,0 +1,27 @@
+{
+ "y1": {
+  "principal_accrual": 5.190480204549546,
+  "indexed_coupon": 0.011315405205533088,
+  "refinanced_uplift": 0.0
+ },
+ "y2": {
+  "principal_accrual": 7.120571215334287,
+  "indexed_coupon": 0.05633426555276377,
+  "refinanced_uplift": 0.004630401166525225
+ },
+ "y3": {
+  "principal_accrual": 7.120571215334287,
+  "indexed_coupon": 0.10483697359427027,
+  "refinanced_uplift": 0.015366228780322493
+ },
+ "y4": {
+  "principal_accrual": 7.120571215334287,
+  "indexed_coupon": 0.1533396816357767,
+  "refinanced_uplift": 0.020862074959784906
+ },
+ "y5": {
+  "principal_accrual": 7.120571215334287,
+  "indexed_coupon": 0.20184238967728313,
+  "refinanced_uplift": 0.029194321927114544
+ }
+}
